@@ -31,12 +31,9 @@ function OrphanagesMap() {
                 zoom={15}
                 style={{ width: '100%', height: '100%' }}
             >
-                {/* OPEN STREET MAP */}
                 {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
-                {/* MAPBOX LIGHT */}
+                {/* for dark version just change light to dark */}
                 <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
-                {/* MAPBOX DARK */}
-                {/* <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} /> */}
             </Map>
 
             <Link to="" className="create-orphanage">
